@@ -2,45 +2,58 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Muhamad Alip Pabian</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Muhamad Alip Pabian</h1>
-    <p>Mahasiswa | Cloud Computing Enthusiast</p>
+    <div class="header-content">
+        <h1>Muhamad Alip Pabian</h1>
+        <p>Mahasiswa | Cloud Computing & DevOps</p>
+        <button id="toggle-theme">🌙 Dark Mode</button>
+    </div>
 </header>
 
-<section>
-    <h2>Tentang Saya</h2>
-    <p>
-        Saya adalah mahasiswa yang tertarik pada bidang komputasi awan, DevOps,
-        dan pengelolaan sistem berbasis cloud. Website ini merupakan portfolio
-        pribadi yang dibangun menggunakan layanan cloud dan CI/CD.
-    </p>
-</section>
+<main>
+    <section>
+        <h2>Tentang Saya</h2>
+        <p>
+            Saya adalah mahasiswa yang mempelajari komputasi awan, DevOps,
+            dan otomasi deployment. Website ini dibuat sebagai project akhir
+            mata kuliah Komputasi Awan dengan penerapan CI/CD dan monitoring.
+        </p>
+    </section>
 
-<section>
-    <h2>Keahlian</h2>
-    <ul>
-        <li>Cloud Computing</li>
-        <li>DevOps & CI/CD</li>
-        <li>Git & GitHub</li>
-        <li>HTML & CSS</li>
-    </ul>
-</section>
+    <section>
+        <h2>Keahlian</h2>
+        <ul class="skills">
+            <li>Cloud Computing</li>
+            <li>DevOps & CI/CD</li>
+            <li>Git & GitHub</li>
+            <li>HTML & CSS</li>
+        </ul>
+    </section>
 
-<section>
-    <h2>Proyek</h2>
-    <p>
-        Website Personal dengan CI/CD dan Monitoring (Project Akhir Komputasi Awan)
-    </p>
-</section>
+    <section>
+        <h2>Proyek</h2>
+        <p>
+            Website Personal dengan CI/CD, Monitoring, dan Rollback
+        </p>
+    </section>
+</main>
 
 <footer>
     <p>© 2025 Muhamad Alip Pabian</p>
 </footer>
+
+<script>
+    const button = document.getElementById("toggle-theme");
+    button.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+    });
+</script>
 
 </body>
 </html>
