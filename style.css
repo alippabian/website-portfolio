@@ -34,6 +34,15 @@ header {
     gap: 10px;
 }
 
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 15px;
+}
+
 #toggle-theme {
     width: fit-content;
     padding: 8px 12px;
